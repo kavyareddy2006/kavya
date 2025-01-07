@@ -1,0 +1,565 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "057b5ce4-99cd-4a22-9da5-af5fdef6fa04",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lst1 = [1, 8, 9, 10, 11, 12]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "fb0cc303-0e34-4b2b-85c1-aabbd445e0f9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "##union operation using | operator\n",
+    "s1 = {1,2,3,4}\n",
+    "s2 = {3,4,5,6}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "14b3c542-0e79-4c17-b10c-f573f291e5a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6}"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1 | s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "bcf708ff-9545-4034-99ab-ca8bc0c9d227",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6}"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.union(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "270e12f5-40bc-445b-b3bb-6a492d23dc7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{5, 6}"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "## Intersection using & operator\n",
+    "s1 = {2,3,4,5,6}\n",
+    "s2 = {11,5,6,7,8}\n",
+    "s1 & s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "6c066923-372c-4f1c-954d-6126178e9741",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{8, 11}"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# difference of two sets\n",
+    "s1 = {11,12,21,23,8}\n",
+    "s2 = {23,12,21,}\n",
+    "s1 - s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "fc4713a7-43e0-4fc6-a4d9-acc1e7318109",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{11}"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "## Symmetric difference\n",
+    "s1 = {11,12,21,23,8}\n",
+    "s2 = {23,12,21,8}\n",
+    "s2.symmetric_difference(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "e5e718fb-bc60-4d81-8051-61b1f99fbbfc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.issubset(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "321dc81a-2f4e-4e0c-8288-3a00922fa9a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.issuperset(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "9aec0bf1-33ad-4741-83cb-3afef80388f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hiii\n",
+      "Hello\n",
+      "Kavya\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Strings\n",
+    "str1 = \"Hiii\"\n",
+    "print(str1)\n",
+    "str2 = \"Hello\"\n",
+    "print(str2)\n",
+    "str3 = \"Kavya\"\n",
+    "print(str3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "dec02234-ac8b-4b31-a5f3-1909a4790b11",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hii\n"
+     ]
+    }
+   ],
+   "source": [
+    "str = 'hii'\n",
+    "print(str)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "4311ffe7-25ba-4e81-90f3-d5a2b93e3fae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n",
+      "<class 'str'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type (str))\n",
+    "print(type (str))\n",
+    "print(type (str))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "8e717f6d-67ff-4094-a2af-8303997dd368",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hii\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'hi'"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Slicing in strings\n",
+    "print(str)\n",
+    "str1[0:2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "a20e0f03-3487-4577-b5a6-83b6f03f6ab4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hii\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "['hii']"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Use of split()\n",
+    "print(str)\n",
+    "str.split()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "c153a7b5-64da-43c9-b10e-ec087d9c8a7c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hii;welcome'"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Use of join() method\n",
+    "str = [\"Hii\", \"welcome\"]\n",
+    "joined_string = ';'.join(str)\n",
+    "joined_string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "068778fd-972d-43a9-a8ad-01efbb095f63",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hii hello?'"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Use of strip() method\n",
+    "str = \"Hii hello?\"\n",
+    "str"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "9a9685de-d360-49f3-90a1-0a2e879e5cff",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'hii,how are you'"
+      ]
+     },
+     "execution_count": 69,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str = \"Hii,How are you\"\n",
+    "str.lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "2605e45d-7283-4302-b253-89137f4cdf2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'HII,HOW ARE YOU'"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str = \"Hii,How are you\"\n",
+    "str.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "b7eed97a-dcdf-4062-811c-d00f7f571fec",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "'{' was never closed (3060406511.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[75], line 1\u001b[1;36m\u001b[0m\n\u001b[1;33m    sales_data = {\u001b[0m\n\u001b[1;37m                 ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m '{' was never closed\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales_data = {\n",
+    "    \"ProductID\": [101,102,103,104],\n",
+    "    \"ProductName\": [\"Laptop\", \"Mouse\", \"Monitor\"],\n",
+    "    \"Category\": [\"Electronics\", \"Mechanism\"],\n",
+    "    \"PriceRange\": [\"High\", \"Low\", \"Middle\"],\n",
+    "    \"StockAvailable\": [15, 100, 200, 300],\n",
+    "    for k,v in sales_data.items()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "43b2ff2b-0218-474a-bdf8-d4f2eb0d5209",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "expected ':' (3321267214.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[77], line 1\u001b[1;36m\u001b[0m\n\u001b[1;33m    for k,v in sales_data.items()\u001b[0m\n\u001b[1;37m                                 ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m expected ':'\n"
+     ]
+    }
+   ],
+   "source": [
+    "for k,v in sales_data.items()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "3af4c8d1-c096-42cb-bd86-764c4b31a7ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (529961378.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[81], line 3\u001b[1;36m\u001b[0m\n\u001b[1;33m    \"Str2\": \"Hello\"\u001b[0m\n\u001b[1;37m          ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "review = {\n",
+    "    \"Revi\": \"Hii\"\n",
+    "    \"Str2\": \"Hello\"\n",
+    "    \"Str3\": \"Welcome\"\n",
+    "review_analysis = {}\n",
+    "for key, str in str.items():\n",
+    "    words = str.lower().replace('.', '').replace(',', '').split()\n",
+    "    str_analysis[key] = {\n",
+    "        \"WordCount\": len(words),\n",
+    "        \"UniqueWords\": list(set(words))\n",
+    "    }\n",
+    "str_analysis\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "ad0a198a-9558-4b65-aa69-a38fa2eb8eb8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kavya\n",
+      "Luxx\n"
+     ]
+    }
+   ],
+   "source": [
+    "d1 = {\"Kavya\": 150, \"Luxx\": 50}\n",
+    "for k in d1.keys():\n",
+    "    print(k)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "81f2f4a5-2e7a-4d2f-9cb4-5804cdb62750",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "150\n",
+      "50\n"
+     ]
+    }
+   ],
+   "source": [
+    "for v in d1.values():\n",
+    "    print(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "d3980812-0a27-4476-a986-3c68ea6d959f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kavya 150\n",
+      "Luxx 50\n"
+     ]
+    }
+   ],
+   "source": [
+    "for k,v in d1.items():\n",
+    "    print(k,v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2a0cdcfd-437d-4586-85c2-ff20615860ed",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:New folder]",
+   "language": "python",
+   "name": "conda-env-New_folder-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
